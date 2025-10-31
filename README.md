@@ -54,8 +54,9 @@ MAINTENANCE_MODE=0
 Make test_failover_alert.sh executable by running chmod +x test_failover.sh then run it: ./test_failover_alert.sh when that is done, check your slack.
 
 
-![Failover Test Screenshot](failover_screenshot.png)
-![High Error Rate Screenshot](high_error_screenshot.png)
+![Failover Test Screenshot](https://images-8989897776633.s3.us-east-1.amazonaws.com/Screenshot+2025-10-31+at+7.25.08%E2%80%AFAM.png)
+
+![High Error Rate Screenshot](https://images-8989897776633.s3.us-east-1.amazonaws.com/Screenshot+2025-10-31+at+7.30.10%E2%80%AFAM.png)
 
 
 **Viewing Logs**
