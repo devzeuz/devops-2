@@ -51,7 +51,13 @@ MAINTENANCE_MODE=0
 
 
 **High Error-Rate Test**
-Make test_failover_alert.sh executable by running chmod +x test_failover.sh then run it: ./test_failover_alert.sh when that is done, check your slack. 
+Make test_failover_alert.sh executable by running chmod +x test_failover.sh then run it: ./test_failover_alert.sh when that is done, check your slack.
+
+<img width="875" height="146" alt="Slack img" src="https://github.com/user-attachments/assets/695fc0d0-47cb-4566-ab45-5c8e7d34df21" />
+
+<img width="1227" height="70" alt="terminal img" src="https://github.com/user-attachments/assets/c460da0c-63a2-4cd2-b0eb-1f2b7f8e179c" />
+
+
 
 **Viewing Logs**
 Nginx logs (includes pool, release, upstream status, latency, etc.):  docker exec nginx tail -n 50 /var/log/nginx/access.log
