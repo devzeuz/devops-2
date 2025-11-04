@@ -6,7 +6,7 @@ from collections import deque
 from datetime import datetime
 import requests
 
-# Environment variables
+
 LOG_FILE = "/var/log/nginx/access.log"
 WINDOW_SIZE = int(os.getenv("WINDOW_SIZE", "200"))
 ERROR_RATE_THRESHOLD = float(os.getenv("ERROR_RATE_THRESHOLD", "2"))
@@ -14,12 +14,12 @@ ALERT_COOLDOWN_SEC = int(os.getenv("ALERT_COOLDOWN_SEC", "300"))
 MAINTENANCE_MODE = os.getenv("MAINTENANCE_MODE", "0") == "1"
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL")
 
-# State
+
 last_pool = None
 request_window = deque(maxlen=WINDOW_SIZE)
 last_alert_time = 0
 
-# Regex to parse log lines
+
 LOG_REGEX = re.compile(
     r".*pool=(?P<pool>\w+).*status=(?P<status>\d+).*"
 )
